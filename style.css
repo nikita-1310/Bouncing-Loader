@@ -1,0 +1,44 @@
+body{
+    margin :0;
+    padding : 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #051024;
+    font-family: cursive;
+   
+}
+.circles{
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    margin: 10px;
+    animation: bounce 1s 0.7s linear infinite;
+}
+.circle-1{
+    background-color: #17eded;
+}
+.circle-2{
+    background-color: #17eded;
+    animation-delay: 0.2s;
+}
+.circle-3{
+    background-color: #17eded;
+    animation-delay: 0.4s;
+}
+@keyframes bounce {
+    0%,
+    50%,
+    100%{
+        transform: scale(1);
+        filter: blur(0px);
+    }
+    25%{
+        transform: scale(0.6);
+    }
+    75%{
+        transform: scale(1.4);
+        background-color: #17eded;
+    }
+}
